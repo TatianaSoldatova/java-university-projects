@@ -1,0 +1,1 @@
+![Coffee machine screenshot](images/coffee.png)
