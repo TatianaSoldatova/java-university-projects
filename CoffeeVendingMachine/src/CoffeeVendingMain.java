@@ -203,6 +203,13 @@ public class CoffeeVendingMain {
 
                             //Ask and compute the payment for coffee
                             displayMessage(MSG_ASK_FOR_MONEY);
+
+                            while (!input.hasNextInt()) {
+                                System.out.println("Invalid input! Please enter an integer.");
+                                input.next(); // consume the invalid input
+                                System.out.print(MSG_ASK_FOR_MONEY);
+                            }
+
                             perCoffeePaymentReceived = input.nextInt();
                             input.nextLine();
 
