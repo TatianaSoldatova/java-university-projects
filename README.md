@@ -1,5 +1,5 @@
-![Coffee machine screenshot](images/coffee.png)
+<img src="images/coffee.png" width="215" alt="Coffee machine screenshot">
 
 ---
 
-![Multiplication table screenshot](images/multTable.png)
+<img src="images/multTable.png" width="262" alt="Multiplication table screenshot">
