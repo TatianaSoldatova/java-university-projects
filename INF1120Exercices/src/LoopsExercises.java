@@ -62,7 +62,7 @@ public class LoopsExercises {
             }
         }while(answer != 'n' && answer != 'y' && answer != 'N' && answer != 'Y'
                 || toContinue);
-        System.out.println("FIN\n");
+        System.out.println("END\n");
     }
 
     /**
@@ -99,7 +99,7 @@ public class LoopsExercises {
                 toContinue = false;
             }
         }
-        System.out.println("FIN\n");
+        System.out.println("END\n");
     }
 
 }
