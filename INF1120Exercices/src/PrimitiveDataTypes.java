@@ -1,9 +1,16 @@
+import java.util.Scanner;
+
 public class PrimitiveDataTypes {
+    static Scanner input = new Scanner(System.in);
 
     public static void main() {
         showTypeConversionRules();
         typeOfExpressionExercise1();
         typeOfExpressionExercise2();
+
+        System.out.println("Division result: " + divideLongToDouble() + "\n");
+
+        input.close();
     }
 
     /**
@@ -55,5 +62,16 @@ public class PrimitiveDataTypes {
         System.out.println("1. (char)'A' + (short)10 = " + n);
         System.out.println("2. (char)'A' + (short)10 == 'K': " + k + "(" +((Object)k).getClass().getSimpleName() + ")");
         System.out.println();
+    }
+
+    /**
+     * Takes 2 long integer values, cast them to double values and divide them one by the other
+     * @return division result as a double
+     */
+    public static double divideLongToDouble() {
+        final long a = UserInputUtils.readLong(input, "Enter number a(long): ", "Invalid Input!");
+        final long b = UserInputUtils.readLong(input, "Enter number b(long): ", "Invalid Input!");
+
+        return (double) (a) / (double)(b);
     }
 }

@@ -19,6 +19,22 @@ public class UserInputUtils {
     }
 
     /**
+     * Validates long input with prompt
+     * @return long input
+     */
+    public static long readLong(Scanner input, String messagePrompt, String messageError) {
+        while (true) {
+            System.out.print(messagePrompt);
+            if(input.hasNextLong()) {
+                return input.nextLong();
+            }else{
+                System.out.println(messageError);
+                input.next(); // discard invalid input
+            }
+        }
+    }
+
+    /**
      * Takes user's char input and ensures to clear the input buffer
      * @return character input
      */
