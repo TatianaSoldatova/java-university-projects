@@ -1,9 +1,11 @@
+import utils.UserInputUtils;
+
 import java.util.Scanner;
 
 public class PrimitiveDataTypes {
     static Scanner input = new Scanner(System.in);
 
-    public static void main() {
+    static void main() {
         showTypeConversionRules();
         typeOfExpressionExercise1();
         typeOfExpressionExercise2();

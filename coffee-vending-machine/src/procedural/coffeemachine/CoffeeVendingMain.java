@@ -1,3 +1,5 @@
+package procedural.coffeemachine;
+
 import java.util.Scanner;
 
 /**

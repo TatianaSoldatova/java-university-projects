@@ -1,9 +1,10 @@
 import java.util.Scanner;
+import utils.UserInputUtils;
 
 public class LoopsExercises {
     static Scanner input = new Scanner(System.in);
 
-    public static void main() {
+    static void main() {
         sumOfIntegers();
         promptToContinueDoWhile();
         promptToContinueWhile();
@@ -66,7 +67,7 @@ public class LoopsExercises {
     }
 
     /**
-     * Asks the user if he wants to continue and waits for the user to pres Enter to do so
+     * Asks the user if he wants to continue and waits for the user to press Enter to do so
      * If no, exits the program
      * while case
      */

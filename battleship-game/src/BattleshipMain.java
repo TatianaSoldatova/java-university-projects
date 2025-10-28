@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import utils.UserInputUtils;
 
 /**
  * The Battleship program allows you to play a simplified single-player version of the Battleship game.

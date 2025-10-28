@@ -2,7 +2,7 @@ import java.text.SimpleDateFormat;
 
 public class MethodsPractice {
 
-    public static void main() {
+    static void main() {
         showMenu();
 
         harmonicNumber(0);

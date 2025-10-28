@@ -1,3 +1,5 @@
+import utils.UserInputUtils;
+
 import java.util.Scanner;
 
 /**
@@ -18,7 +20,7 @@ public class SecondsConverter {
     public static final String MSG_ERR_NBR_SECONDS  = "Error. The number of seconds must be greater than " + NBR_SECONDS_MIN;
     public static final String MSG_END              = "END OF PROGRAM";
 
-    public static void main(String[] args) {
+    static void main() {
         //-----------
         // VARIABLES
         //-----------

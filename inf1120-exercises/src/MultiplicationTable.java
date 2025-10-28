@@ -1,9 +1,11 @@
+import utils.UserInputUtils;
+
 import java.util.Scanner;
 
 public class MultiplicationTable {
     static Scanner input = new Scanner(System.in);
 
-    public static void main(String args[]){
+    static void main(){
         generateMultiplicationTableFromNumber();
         input.close();
     }

@@ -1,7 +1,15 @@
+package utils;
+
 import java.util.Scanner;
 
+/**
+ * Open the Project Structure
+ * Go to Modules → [select one of your other modules] → Dependencies tab
+ * Click + → Module Dependency, then choose your common-utils module.
+ * This tells IntelliJ (and the compiler) that this module can see the code inside common-utils.
+ * Repeat thi step for each module that needs to use your utility code.
+ */
 public class UserInputUtils {
-
     /**
      * Validates integer input with prompt
      * @return integer input
