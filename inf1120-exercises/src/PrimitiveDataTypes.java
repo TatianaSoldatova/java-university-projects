@@ -11,8 +11,18 @@ public class PrimitiveDataTypes {
         typeOfExpressionExercise2();
 
         System.out.println("Division result: " + divideLongToDouble() + "\n");
+        finalTestConversion();
 
         input.close();
+    }
+
+    /**
+     * Demonstrates type conversion behavior in Java when using a {final int} value.
+     */
+    public static void finalTestConversion(){
+        final int num = 12;
+        byte smallNum = num + 10;
+        System.out.printf("final (int) enters in (byte) result: " + smallNum + "\n");
     }
 
     /**
