@@ -53,12 +53,61 @@ public class UserInputUtils {
     }
 
     /**
-     * Processes the player's input in String format and returns her/his response.
-     * @param message (prompt message)
+     * Prompts the user with a message and reads a single word from the input.
+     * This method prints the provided message to the console and then reads
+     * the next token (word) entered by the user, stopping at any whitespace.
+     * It does not read an entire line, only the first word typed
+     * @param input the Scanner object used to read input from the user
+     * @param message (prompt message with new line)
+     * @return the next word entered by the user as a String
      */
-    public static String readString(Scanner input, String message) {
+    public static String readStringWordLn(Scanner input, String message) {
         System.out.println(message);
         return input.next();
+    }
+
+    /**
+     * Prompts the user with a message and reads a single word from the input.
+     * This method prints the provided message to the console and then reads
+     * the next token (word) entered by the user, stopping at any whitespace.
+     * It does not read an entire line, only the first word typed
+     * @param input the Scanner object used to read input from the user
+     * @param message (prompt message without new line)
+     * @return the next word entered by the user as a String
+     */
+    public static String readStringWord(Scanner input, String message) {
+        System.out.print(message);
+        return input.next();
+    }
+
+    /**
+     * Prompts the user with a message and reads an entire line of input.
+     * This method prints the provided message to the console and then reads
+     * the full line entered by the user, including spaces, until the user
+     * presses Enter. It is useful for capturing multi-word input such as names,
+     * addresses, or sentences.
+     * @param input the Scanner object used to read input from the user
+     * @param message the message to display to prompt the user (with new line)
+     * @return the full line entered by the user as a String
+     */
+    public static String readStringLineLn(Scanner input, String message) {
+        System.out.println(message);
+        return input.nextLine();
+    }
+
+    /**
+     * Prompts the user with a message and reads an entire line of input.
+     * This method prints the provided message to the console and then reads
+     * the full line entered by the user, including spaces, until the user
+     * presses Enter. It is useful for capturing multi-word input such as names,
+     * addresses, or sentences.
+     * @param input the Scanner object used to read input from the user
+     * @param message the message to display to prompt the user (without new line)
+     * @return the full line entered by the user as a String
+     */
+    public static String readStringLine(Scanner input, String message) {
+        System.out.print(message);
+        return input.nextLine();
     }
 
     /**

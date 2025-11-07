@@ -113,7 +113,7 @@ public class BattleshipMain {
     public static String newGameQuery() {
         String answer;
         do{
-            answer = UserInputUtils.readString(input, MSG_ASK_REPLAY);
+            answer = UserInputUtils.readStringWordLn(input, MSG_ASK_REPLAY);
 
             if(!answer.equalsIgnoreCase(EXIT_THE_GAME) && !answer.equalsIgnoreCase(CONTINUE_THE_GAME)){
                 displayMessageLn(MSG_ERR_REPLAY);
@@ -333,7 +333,7 @@ public class BattleshipMain {
         boolean validCoords = false;
         if(coords != null){
             do{
-                coords = UserInputUtils.readString(input, MSG_ASK_COORDS);
+                coords = UserInputUtils.readStringWordLn(input, MSG_ASK_COORDS);
                 validCoords = (coords.length() == 3) && (coords.charAt(1) == ',')
                         && (coords.charAt(0) >= '0') && (coords.charAt(0) <= '7')
                         && (coords.charAt(2) >= '0') && (coords.charAt(2) <= '7');
@@ -501,7 +501,7 @@ public class BattleshipMain {
         do{
             gameGrid = JeuUtils.genererGrilleSolution();
 
-            menuChoice = UserInputUtils.readString(input,ANSI_YELLOW + MSG_MAIN_MENU + ANSI_RESET);
+            menuChoice = UserInputUtils.readStringWordLn(input,ANSI_YELLOW + MSG_MAIN_MENU + ANSI_RESET);
             validChoice = false;
 
             switch(menuChoice){
@@ -530,5 +530,6 @@ public class BattleshipMain {
         }while(!newGameChoice.equalsIgnoreCase(EXIT_THE_GAME));
 
         displayMessageLn(MSG_END_OF_PROGRAM);
+        input.close();
     }
 }
