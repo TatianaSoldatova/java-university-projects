@@ -7,4 +7,7 @@
     <td><img src="images/battleshipTitle.png" width="300" alt="Battleship"></td>
     <td><img src="images/battleship.png" width="400" alt="Battleship"></td>
   </tr>
+<tr>
+    <td><img src="images/invoice.png" width="450" alt="Battleship"></td>
+  </tr>
 </table>
